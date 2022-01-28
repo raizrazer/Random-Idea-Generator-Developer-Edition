@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find What to Build</title>
+
+    <!-- Linking Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Linking Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Animate.style css library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<!-- 
+    Thank you for looking through the HTML.
+    If you want to checkout the whole code behind this app.
+    Please visit my GitHub here : 
+
+    Thank you have a nice day.
+ -->
+
+<body>
+    <main>
+        <div class="whole-app">
+            <div class="top-section">
+                <h1 class="top-heading">Random Idea Generator</h1>
+                <h5 class="top-sub-heading">Are you out of ideas what to create!</h5>
+            </div>
+            <div class="mid-section">
+                <div class="gradient-ask">
+                    <p>You fancy gradient?</p>
+                    <p class="hand-icon">👍</p>
+                </div>
+                <div class="help">
+                    <p>Click on the Generate Button to find an idea. And create upon it</p>
+                </div>
+                <div class="generated display-none">
+                    <div class="text-format">
+                        <p>You should create a <span></span> for a company which is about <span></span> and use the primary color as <span></span> and secondary color as <span></span>. If you don't like the idea, click Generate again to generate the whole
+                            scene again. Or you can reload the individual parameters.</p>
+                    </div>
+                    <div class="industry spacer">
+                        <p class="special_spacer">Industry</p>
+                        <p class="industry-content special_spacer">Investment</p>
+                        <p class="special_spacer reload">🔃</p>
+                    </div>
+                    <div class="idea spacer">
+                        <p class="idea-content special_spacer">Front Page</p>
+                        <p class="special_spacer"></p>
+                        <p class="special_spacer reload">🔃</p>
+                    </div>
+                    <div class="primary-color spacer">
+                        <p class="special_spacer">Primary Color</p>
+                        <div class="primary-color-display special_spacer">
+                            <p>Click to copy</p>
+                        </div>
+                        <p class="special_spacer reload">🔃</p>
+                    </div>
+                    <div class="secondary-color spacer">
+                        <p class="special_spacer">Secondary Color</p>
+                        <div class="secondary-color-display special_spacer">
+                            <p>Click to copy</p>
+                        </div>
+                        <p class="special_spacer reload">🔃</p>
+                    </div>
+
+                </div>
+                <div class="button-area move-button">
+                    <button class="generate">Generate</button>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <footer>
+                    <p>Created by @Raiz</p>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>

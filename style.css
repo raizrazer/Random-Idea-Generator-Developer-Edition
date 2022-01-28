@@ -1,0 +1,219 @@
+* {
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+    --font-roboto-mono: 'Roboto Mono', monospace;
+}
+
+body {
+    margin: 0px;
+    font-family: var(--font-roboto);
+    background: #363636;
+    color: #FFFFFF;
+}
+
+main {
+    height: 100vh;
+}
+
+.whole-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: inherit;
+    justify-content: space-between;
+}
+
+.top-section {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-section h1 {
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bolder;
+    margin: 50px 0px 0px 0px;
+}
+
+.top-section h5 {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 35px;
+    margin: 0px;
+}
+
+.mid-section {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(45, 40, 46);
+    padding: 0px 30px 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+}
+
+.gradient-ask {
+    display: flex;
+    flex-direction: row;
+}
+
+.gradient-ask p:first-child {
+    font-family: var(--font-roboto);
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.gradient-ask p {
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.help-ask {
+    font-family: var(--font-roboto);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.generate {
+    font-family: var(--font-roboto);
+    color: #FFFFFF;
+    text-shadow: -2px -1px 0 #000, 2px -1px 0 #000, -2px 1px 0 #000, 2px 1px 0 #000;
+    padding: 15px 70px;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 60px;
+    background: rgba(62, 62, 62, 1);
+    border-radius: inherit;
+    cursor: pointer;
+}
+
+.button-area {
+    background: linear-gradient(rgba(77, 71, 225, 1), rgba(55, 252, 248, 1));
+    border-radius: 360px;
+    padding: 10px;
+}
+
+.bottom-section {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-section p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.generated {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 0px 0px 20px;
+}
+
+.text-format {
+    width: 50vw;
+}
+
+.text-format span {
+    font-style: italic;
+    font-weight: 900;
+    color: rgb(199, 172, 191);
+}
+
+.text-format p {
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.spacer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.industry .special_spacer {
+    display: flex;
+    flex: 1;
+    /* justify-items: center; */
+    justify-content: center;
+}
+
+.idea .special_spacer {
+    display: flex;
+    flex: 1;
+    /* justify-items: center; */
+    justify-content: center;
+}
+
+.primary-color .special_spacer {
+    display: flex;
+    flex: 1;
+    /* justify-items: center; */
+    justify-content: center;
+}
+
+.secondary-color .special_spacer {
+    display: flex;
+    flex: 1;
+    /* justify-items: center; */
+    justify-content: center;
+}
+
+.primary-color-display {
+    transition: 500ms;
+    cursor: pointer;
+    width: 100%;
+    /* background: lightgray; */
+    border-radius: 360px;
+    text-shadow: -1px -1px 0 rgb(37, 37, 37), 1px -1px 0 rgb(37, 37, 37), -1px 1px 0 rgb(37, 37, 37), 1px 1px 0 rgb(37, 37, 37);
+}
+
+.secondary-color-display {
+    transition: 500ms;
+    cursor: pointer;
+    width: 100%;
+    /* background: lightgray; */
+    border-radius: 360px;
+    text-shadow: -1px -1px 0 rgb(37, 37, 37), 1px -1px 0 rgb(37, 37, 37), -1px 1px 0 rgb(37, 37, 37), 1px 1px 0 rgb(37, 37, 37);
+}
+
+.hand-icon {
+    transition: 250ms;
+    cursor: pointer;
+}
+
+
+/* Change Classes */
+
+.rotate-icon {
+    transform: rotate( -180deg);
+    opacity: 40%;
+}
+
+.reload {
+    cursor: pointer;
+}
+
+.reload p {
+    font-size: 25px;
+}
+
+.display-none {
+    display: none;
+}
