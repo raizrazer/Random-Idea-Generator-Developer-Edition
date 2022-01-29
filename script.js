@@ -160,11 +160,28 @@ const updateText = () => {
     const spans = document.getElementsByClassName('text-format')[0].getElementsByTagName('span');
     spans[0].innerHTML = ideaContent.html();
     spans[1].innerHTML = industryContent.html();
-    if (gradientChecker()) {
-        spans[2].innerHTML = primaryColorDisplay.css('background-image');
-        spans[3].innerHTML = secondaryColorDisplay.css('background-image');
-    } else {
-        spans[2].innerHTML = primaryColorDisplay.css('background-color');
-        spans[3].innerHTML = secondaryColorDisplay.css('background-color');
-    }
+    // if (gradientChecker()) {
+    //     spans[2].innerHTML = primaryColorDisplay.css('background-image');
+    //     spans[3].innerHTML = secondaryColorDisplay.css('background-image');
+    // } else {
+    //     spans[2].innerHTML = primaryColorDisplay.css('background-color');
+    //     spans[3].innerHTML = secondaryColorDisplay.css('background-color');
+    // }
 };
+
+
+
+// Animations
+
+// Reload Click Animation
+$('.reload').click(() => {
+    console.log('clicked')
+    $('.reload').animate({ transform: "rotatez(300deg)" }, 500)
+})
+
+// Button Gradient Change
+
+setInterval(() => {
+    $(".button-area").css('background-image', `linear-gradient(${randomAngle()}deg,${primaryColorRandom()},${secondaryColorRandom()})`);
+}, 100);
+// $(".button-area").css('background-image', `linear-gradient(${randomAngle()}deg,${primaryColorRandom()},${secondaryColorRandom()})`);
